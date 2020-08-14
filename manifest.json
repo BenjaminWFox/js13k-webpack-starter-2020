@@ -1,0 +1,14 @@
+{
+  "name": "GAME NAME",
+  "description": "A rad description of your game.",
+  "images" : {
+    "image_large": "image_large.png",
+    "image_thumbnail": "image_thumbnail.png"
+  },
+  "categories": [],
+  "_delete-categories-list": ["Desktop", "Mobile", "Web Monetization", "Server", "WebXR"],
+  "user" : {
+    "name": "YOUR NAME",
+    "website": "YOUR WEBSITE"
+  }
+}
