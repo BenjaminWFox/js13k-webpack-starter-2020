@@ -1,6 +1,5 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 // const CopyWebpackPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 const resolve = require('./webpack.config.resolve')
@@ -59,22 +58,5 @@ module.exports = {
   plugins: [
     new webpack.HashedModuleIdsPlugin(),
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'src/index.html',
-      /**
-       * Note: You can do HTLM minification here OR in `html-loader` - but not both.
-       *
-       * Exact filesize reduction may vary depending on settings used in each.
-      */
-      minify: {
-        collapseWhitespace: true,
-        removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true,
-        minifyURLs: true,
-      },
-    }),
   ],
 }
