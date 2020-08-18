@@ -18,6 +18,15 @@ http://localhost:8080/
 - `build`: Creates a compact, minified build in `/dist`
 - `lint`: Runs eslint to check for errors. Better to set this up in your IDE to check automatically on save.
 
+### Boilerplate
+
+There are some files & code included as examples of function & syntax that are not meant to be included in the final bundle. You can basically remove everything from the files listed below, but the largest chunks are: 
+
+- `index.js` - the `.scss` and `.png` import
+- `main.scss` - the `.png` `background-image`
+- `index.html` - the `<img>` tag
+- These 3 images are in `assets/images/sprites` and can also be deleted
+
 ### js13k specific files
 
 None of these files are included in your final bundle.
